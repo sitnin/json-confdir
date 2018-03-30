@@ -44,7 +44,7 @@ JSON-files are parsed with the `json5` library. So your configuration files coul
 
 Contents of `test/1/00-test.json`:
 
-```json
+```json5
 {
     "option1": "blablabla",
     "option2": 123
@@ -53,7 +53,7 @@ Contents of `test/1/00-test.json`:
 
 Contents of `test/1/10-test.json`:
 
-```json
+```json5
 {
     option3: {
         key: "value",
@@ -65,7 +65,7 @@ Contents of `test/1/10-test.json`:
 
 Contents of `test/2/another.json`:
 
-```json
+```json5
 {
     "option4": [1,2,3],
     // option5: "showld be commented out =)"
