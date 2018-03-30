@@ -4,6 +4,7 @@
     "license": "MIT",
     "main": "./lib/index.js",
     "author": "Gregory Sitnin <greg@sitnin.com>",
+    "keywords": ["config", "configuration", "confdir", "json", "json5"],
     "repository": {
         "type": "git",
         "url": "https://github.com/sitnin/json-confdir.git"
