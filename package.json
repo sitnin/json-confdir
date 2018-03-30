@@ -17,7 +17,7 @@
         "clean": "rm -rf lib/",
         "build": "yarn run babel src/ -- -d lib/",
         "test": "jest",
-        "prepublish": "yarn build"
+        "prepublishOnly": "yarn clean && yarn build"
     },
     "dependencies": {
         "json5": "^1.0.1",
