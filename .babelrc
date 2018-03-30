@@ -1,0 +1,17 @@
+{
+    "presets": [
+        "flow",
+        ["env", {
+            "targets": {
+                "node": "4.0"
+            },
+            "useBuiltIns": true
+        }]
+    ],
+    "plugins": [
+        [ "transform-runtime", { "polyfill": true, "regenerator": false } ],
+        "syntax-object-rest-spread",
+        "syntax-class-properties",
+        "transform-class-properties",
+    ]
+}

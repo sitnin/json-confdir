@@ -1,0 +1,11 @@
+.DS_Store
+.idea/
+.git/
+node_modules/
+src/
+test/
+test.js
+*.log
+.babelrc
+.eslintrc
+

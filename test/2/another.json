@@ -1,0 +1,9 @@
+{
+    "option4": [1,2,3],
+    // option5: "showld be commented out =)"
+    "option1": "foorbarbaz",
+    option3: {
+        second: "replaced",
+        addition: 1000
+    }
+}

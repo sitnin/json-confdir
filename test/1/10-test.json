@@ -1,0 +1,7 @@
+{
+    option3: {
+        key: "value",
+        second: [],
+    },
+    option2: 321
+}

@@ -1,0 +1,38 @@
+{
+    "name": "json-confidir",
+    "version": "1.2.0",
+    "license": "MIT",
+    "main": "./lib/index.js",
+    "author": "Gregory Sitnin <greg@sitnin.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sitnin/json-confdir.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sitnin/json-confdir/issues",
+        "email": "greg@sitnin.com"
+    },
+    "engines": { "node": ">=4.0" },
+    "scripts": {
+        "clean": "rm -rf lib/",
+        "build": "yarn run babel src/ -- -d lib/",
+        "test": "jest",
+        "prepublish": "yarn build"
+    },
+    "dependencies": {
+        "json5": "^1.0.1",
+        "lodash": "^4.17.5"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-jest": "^22.4.3",
+        "babel-plugin-syntax-class-properties": "^6.13.0",
+        "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-flow": "^6.23.0",
+        "jest": "^22.4.3"
+    }
+}
