@@ -1,0 +1,19 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "babel"
+    ],
+    "rules": {
+        "babel/new-cap": 1,
+        "babel/object-curly-spacing": 0,
+        "babel/no-invalid-this": 0,
+        "babel/semi": 1,
+        "semi": [ "warn", "always" ],
+        "indent": [ "warn", 4, { "SwitchCase": 1 } ],
+        "quotes": [ "warn", "double" ],
+        "object-property-newline": [ "warn", { "allowMultiplePropertiesPerLine": true } ],
+        "comma-dangle": [ "warn", "always-multiline" ],
+        "camelcase": 0,
+        "space-before-function-paren": "off"
+    }
+}
