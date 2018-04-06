@@ -9,7 +9,7 @@
         }]
     ],
     "plugins": [
-        [ "transform-runtime", { "polyfill": true, "regenerator": false } ],
+        [ "transform-runtime", { "polyfill": false, "regenerator": true } ],
         "syntax-object-rest-spread",
         "syntax-class-properties",
         "transform-class-properties",
