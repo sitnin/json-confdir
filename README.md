@@ -32,6 +32,8 @@ reader.load("/path/to/config/dir").then(cfg => {
 });
 ```
 
+Method signature is: `ConfDirReader.load(String | [String]): Promise`
+
 ## Confuguration files
 
 Library loads all files in the directories in the order supplied be the `fs.readdir()`.
