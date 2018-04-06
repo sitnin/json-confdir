@@ -4,7 +4,13 @@
     "license": "MIT",
     "main": "./lib/index.js",
     "author": "Gregory Sitnin <greg@sitnin.com>",
-    "keywords": ["config", "configuration", "confdir", "json", "json5"],
+    "keywords": [
+        "config",
+        "configuration",
+        "confdir",
+        "json",
+        "json5"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/sitnin/json-confdir.git"
@@ -13,14 +19,17 @@
         "url": "https://github.com/sitnin/json-confdir/issues",
         "email": "greg@sitnin.com"
     },
-    "engines": { "node": ">=4.0" },
+    "engines": {
+        "node": ">=4.0"
+    },
     "scripts": {
         "clean": "rm -rf lib/",
-        "build": "yarn run babel src/ -- -d lib/",
+        "build": "yarn run babel src/ -d lib/",
         "test": "jest",
         "prepublishOnly": "yarn clean && yarn build"
     },
     "dependencies": {
+        "babel-regenerator-runtime": "^6.5.0",
         "json5": "^1.0.1",
         "lodash": "^4.17.5"
     },
