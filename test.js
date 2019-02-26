@@ -1,4 +1,4 @@
-const ConfDirReader = require(".");
+const ConfDirReader = require("./lib");
 
 describe("Works", () => {
     it("instantiates correctly", () => {

@@ -11,7 +11,7 @@ const readdir = util.promisify(fs.readdir);
 const readFile = util.promisify(fs.readFile);
 
 export default class ConfDirReader {
-    async loadJsonFile (filename) {
+    async loadJsonFile(filename) {
         let result = {};
 
         try {
@@ -24,7 +24,7 @@ export default class ConfDirReader {
         return result;
     }
 
-    async directoryFilenames (dirname) {
+    async directoryFilenames(dirname) {
         let result = [];
 
         try {
@@ -50,7 +50,7 @@ export default class ConfDirReader {
         return result;
     }
 
-    async load (...dirnames) {
+    async load(...dirnames) {
         let result = {};
 
         try {
