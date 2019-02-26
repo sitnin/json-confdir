@@ -6,11 +6,11 @@ It is used in several projects. Compatible with any Node.js version starting 4.x
 
 ## Installation
 
-    $ yarn add json-reader
+    $ yarn add json-confdir
 
 or
 
-    $ npm install --save json-reader
+    $ npm install --save json-confdir
 
 ## Usage
 
@@ -18,7 +18,7 @@ Library exports a class ConfDirReader which is pretty simple to use. It exposes 
 
 ```javascript
 // import a class from library
-const ConfDirReader = require("json-config");
+const ConfDirReader = require("json-confdir");
 
 // create reader instance
 const reader = new ConfDirReader();
