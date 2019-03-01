@@ -1,4 +1,4 @@
-const ConfDirReader = require("./lib");
+const ConfDirReader = require("./lib").default;
 
 describe("Works", () => {
     it("instantiates correctly", () => {

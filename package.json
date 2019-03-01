@@ -1,6 +1,6 @@
 {
     "name": "json-confdir",
-    "version": "1.2.3",
+    "version": "2.0.1",
     "license": "MIT",
     "main": "./lib/index.js",
     "author": "Gregory Sitnin <greg@sitnin.com>",
@@ -20,29 +20,23 @@
         "email": "greg@sitnin.com"
     },
     "engines": {
-        "node": ">=4.0"
+        "node": ">=8.0.0"
     },
     "scripts": {
-        "clean": "rm -rf lib/",
-        "build": "yarn run babel src/ -d lib/",
+        "clean": "rm -rf ./lib",
+        "build": "yarn tsc",
         "test": "jest",
         "prepublishOnly": "yarn clean && yarn build"
     },
     "dependencies": {
-        "babel-regenerator-runtime": "^6.5.0",
-        "json5": "^1.0.1",
-        "lodash": "^4.17.5"
+        "json5": "^2.1.0",
+        "lodash": "^4.17.11"
     },
     "devDependencies": {
-        "babel-cli": "^6.26.0",
-        "babel-core": "^6.26.0",
-        "babel-jest": "^22.4.3",
-        "babel-plugin-syntax-class-properties": "^6.13.0",
-        "babel-plugin-syntax-object-rest-spread": "^6.13.0",
-        "babel-plugin-transform-class-properties": "^6.24.1",
-        "babel-plugin-transform-runtime": "^6.23.0",
-        "babel-preset-env": "^1.6.1",
-        "babel-preset-flow": "^6.23.0",
-        "jest": "^22.4.3"
+        "@types/json5": "^0.0.30",
+        "@types/lodash": "^4.14.121",
+        "@types/node": "^11.9.5",
+        "jest": "^24.1.0",
+        "typescript": "^3.3.3333"
     }
 }

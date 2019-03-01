@@ -2,7 +2,7 @@
 
 This library is intended to assemble a configuration object from multiple directories and chunks.
 
-It is used in several projects. Compatible with any Node.js version starting 4.x.
+It is used in several projects. Compatible with any Node.js version starting 8.x.
 
 ## Installation
 

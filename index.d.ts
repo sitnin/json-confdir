@@ -1,8 +1,7 @@
-declare module "json-confdir";
-
-export class ConfDirReader {
-    public constructor();
-    public load(...dirnames: string[]): Promise<any>;
+declare module "json-confdir" {
+    export class ConfDirReader {
+        public constructor();
+        public loadJsonFile(filename: string): Promise<object>;
+        public load(...dirnames: string[]): Promise<object>;
+    }
 }
-
-export default ConfDirReader;
