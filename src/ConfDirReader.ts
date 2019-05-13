@@ -5,26 +5,37 @@ import * as path from "path";
 import * as json5 from "json5";
 import * as lodash from "lodash";
 import * as util from "util";
+import { JsonDirReader } from "./JsonDirReader";
 
 const stat = util.promisify(fs.stat);
 const readdir = util.promisify(fs.readdir);
 const readFile = util.promisify(fs.readFile);
 
-export default class ConfDirReader {
-    public async loadJsonFile(filename: string): Promise<object> {
+export default class ConfDirReader implements JsonDirReader {
+    private readonly throwOnError: boolean;
+
+    public constructor(throwOnError: boolean = false) {
+        this.throwOnError = throwOnError;
+    }
+
+    public async loadJsonFile(filename: string): Promise<any> {
         let result = {};
 
         try {
             const contents = await readFile(filename, "utf-8");
             result = json5.parse(contents);
         } catch (err) {
+            if (this.throwOnError) {
+                throw err;
+            }
+
             result = {};
         }
 
         return result;
     }
 
-    public async load(...dirnames: string[]): Promise<object> {
+    public async load(...dirnames: string[]): Promise<any> {
         let result = {};
         let filenames: string[] = [];
 
@@ -42,13 +53,17 @@ export default class ConfDirReader {
                 }
             }
         } catch (err) {
+            if (this.throwOnError) {
+                throw err;
+            }
+
             result = {};
         }
 
         return result;
     }
 
-    private async directoryFilenames(dirname: string): Promise<any> {
+    private async directoryFilenames(dirname: string): Promise<string[]> {
         let result = [];
 
         try {

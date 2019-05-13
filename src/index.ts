@@ -1,5 +1,6 @@
 import ConfDirReader from "./ConfDirReader";
+import SyncDirReader from "./SyncDirReader";
 
-export { ConfDirReader };
+export { ConfDirReader, SyncDirReader };
 
 export default ConfDirReader;

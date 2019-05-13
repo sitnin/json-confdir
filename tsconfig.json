@@ -9,7 +9,7 @@
         "noImplicitAny": true,
         "strictNullChecks": true,
         "outDir": "./lib",
-        "types": ["node", "lodash"]
+        "types": ["node", "jest"]
     },
     "include": [
         "src/**/*.ts",

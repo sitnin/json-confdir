@@ -1,6 +1,7 @@
 {
     "name": "json-confdir",
-    "version": "2.0.1",
+    "description": "Load directory with .json files into one configuration object",
+    "version": "2.1.0",
     "license": "MIT",
     "main": "./lib/index.js",
     "author": "Gregory Sitnin <greg@sitnin.com>",
@@ -25,7 +26,7 @@
     "scripts": {
         "clean": "rm -rf ./lib",
         "build": "yarn tsc",
-        "test": "jest",
+        "test": "yarn clean && yarn tsc && yarn jest",
         "prepublishOnly": "yarn clean && yarn build"
     },
     "dependencies": {
@@ -33,6 +34,7 @@
         "lodash": "^4.17.11"
     },
     "devDependencies": {
+        "@types/jest": "^24.0.12",
         "@types/json5": "^0.0.30",
         "@types/lodash": "^4.14.121",
         "@types/node": "^11.9.5",
