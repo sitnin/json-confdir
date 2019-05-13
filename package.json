@@ -1,7 +1,7 @@
 {
     "name": "json-confdir",
     "description": "Loads directory with .json files into one configuration object",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "license": "MIT",
     "main": "./lib/index.js",
     "author": "Gregory Sitnin <greg@sitnin.com>",
