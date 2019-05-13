@@ -1,4 +1,5 @@
 .DS_Store
+.vs_code/
 .idea/
 .git/
 node_modules/
@@ -8,3 +9,6 @@ test.js
 *.log
 .babelrc
 .eslintrc
+tsconfig.json
+tslint.json
+.editorconfig
