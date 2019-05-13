@@ -1,6 +1,6 @@
 {
     "name": "json-confdir",
-    "description": "Load directory with .json files into one configuration object",
+    "description": "Loads directory with .json files into one configuration object",
     "version": "2.1.0",
     "license": "MIT",
     "main": "./lib/index.js",
